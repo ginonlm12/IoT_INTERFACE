@@ -6,7 +6,7 @@ token = token  # Thay bằng token của bạn
 pin = "V27"  # Virtual đèn
 value = 0  # 1 để bật, 0 để tắt
 # Light turn
-def toggle_light(value, server_address = "blynk.cloud", pin = "V27", token = "A62kSbujLdIY05YSf8nzSPI0bHigxC-t"):
+def toggle_light(value,  token, server_address = "blynk.cloud", pin = "V27"):
     """
     Gửi yêu cầu HTTP để bật/tắt đèn trên Blynk.
 
@@ -32,7 +32,7 @@ def toggle_light(value, server_address = "blynk.cloud", pin = "V27", token = "A6
         return None
 
 # fan turn
-def toggle_fan(value, server_address = "blynk.cloud", pin = "V26", token = "A62kSbujLdIY05YSf8nzSPI0bHigxC-t"):
+def toggle_fan(value, token, server_address = "blynk.cloud", pin = "V26"):
     """
     Gửi yêu cầu HTTP để bật/tắt đèn trên Blynk.
 
